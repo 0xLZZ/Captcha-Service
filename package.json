@@ -1,0 +1,47 @@
+{
+    "devDependencies": {
+        "@types/express": "^4.17.15",
+        "@types/node": "^18.11.17",
+        "typescript": "^4.9.4"
+    },
+    "nodemonConfig": {
+        "ignore": [
+            ".git",
+            "node_modules/"
+        ],
+        "watch": [
+            "src/"
+        ],
+        "ext": "*.js,*.ts,*.json",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    "name": "captcha-api",
+    "description": "A logging service controlled by a CRUD API to centralize logs from all your different apps and services",
+    "version": "1.0.0",
+    "main": "dist/src/index.js",
+    "scripts": {
+        "test": "echo test",
+        "start": "npx tsc && node dist/src/index.js",
+        "start-dev": "nodemon -x \"npm run start\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/0xNOVATO/Captcha-API.git"
+    },
+    "keywords": [
+        "captcha"
+    ],
+    "author": "Novato",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/0xNOVATO/Captcha-API/issues"
+    },
+    "homepage": "https://github.com/0xNOVATO/Captcha-API#readme",
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "express": "^4.18.2",
+        "log4js": "^6.7.1"
+    }
+}

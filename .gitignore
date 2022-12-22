@@ -1,0 +1,11 @@
+# Logs
+/logs
+
+# Dependencies
+node_modules
+
+# Git
+.git
+
+# TypeScript
+dist
