@@ -12,7 +12,7 @@ A captcha service to generate random & unique captchas in image form via a HTTP 
 
 
 ## Example
-> In this case the captcha text was "537ad236".
+> In this case the captcha text was "c33def9b".
 
 Captcha image will always be 300 wide and 100 high.
 
@@ -31,11 +31,11 @@ Captcha image will always be 300 wide and 100 high.
 ## API Response
 > Refer to this to familiarise yourself with the API's response.
 
-| Property      | Example         | Description                                                                                            |
-| ------------- | --------------- | ------------------------------------------------------------------------------------------------------ |
-| `image`   | awd443534534...    | A data URL containing a representation of the image in the png format. Used to visually present the challenge to the user in HTML. |
-| `data`   | awd443534534...    | A png image buffer converted into base64. Used to visually present the challenge to the user. |
-| `text` | 70bbcc1e | The actual text of the captcha that the user needs to enter to pass                            |
+| Property | Example                        | Description                                                                                                                        |
+| -------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `image`  | data:image/png;base64,iVBOR... | A data URL containing a representation of the image in the png format. Used to visually present the challenge to the user in HTML. |
+| `data`   | iVBOR...                       | A png image buffer converted into base64. Used to visually present the challenge to the user.                                      |
+| `text`   | c33def9b                       | The actual text of the captcha that the user needs to enter to pass                                                                |
 
 
 
