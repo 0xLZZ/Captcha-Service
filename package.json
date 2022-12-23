@@ -17,8 +17,8 @@
             "NODE_ENV": "development"
         }
     },
-    "name": "captcha-api",
-    "description": "A logging service controlled by a CRUD API to centralize logs from all your different apps and services",
+    "name": "captcha-service",
+    "description": "A captcha service to generate random & unique captchas in image form via a HTTP API",
     "version": "1.0.0",
     "main": "dist/src/index.js",
     "scripts": {
@@ -41,6 +41,7 @@
     "homepage": "https://github.com/0xNOVATO/Captcha-API#readme",
     "dependencies": {
         "body-parser": "^1.20.1",
+        "canvas": "^2.11.0",
         "express": "^4.18.2",
         "log4js": "^6.7.1"
     }
